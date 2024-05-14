@@ -55,6 +55,7 @@ const Cart = () => {
   }
   return (
     <div className="w-75 mx-auto ">
+        <h1 className="text-center mt-3">Products</h1>
       {data.map((element, index) => {
         return (
           <div className="contain px-4" key={index}>
@@ -70,13 +71,13 @@ const Cart = () => {
               <div className="col-sm-12 col-lg-4 d-flex flex-wrap justify-content-between p-3 details">
                 <div className="buttons">
                   <button
-                    className="btn btn-outline-warning py-1"
+                    className="btn btn-outline-primary  py-1 fw-bold "
                     onClick={() => handleInc(element.id, element.quantity)}
                   >
                     +
                   </button>
                   <input
-                    className="number mx-1 border-0"
+                    className="number mx-1 py-1 border-0 "
                     type="text"
                     value={
                       element.quantity !== undefined ? element.quantity : 1
@@ -86,7 +87,7 @@ const Cart = () => {
                     }}
                   />
                   <button
-                    className="btn btn-outline-warning py-1"
+                    className="btn btn-outline-primary fw-bold py-1"
                     onClick={() => handleDec(element.id, element.quantity)}
                   >
                     -
@@ -95,7 +96,7 @@ const Cart = () => {
                
                 <div className="price">
                   <h5 className="mb-5">${element.price}</h5>
-                  <button onClick={()=>handleDelete(element.id)}className="btn btn-outline-warning py-1 mt-5">
+                  <button onClick={()=>handleDelete(element.id)}className="btn btn-outline-danger py-1 mt-5">
                   remove
                 </button>
                 </div>
