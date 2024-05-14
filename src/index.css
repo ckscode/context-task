@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.contain{
+  background-color:#F6F5F8;
+  margin-top:2%;
+}
+
+.number{
+  width:15%;
+  text-align:center;
+}
+
+.image{
+  width:40%
+}
+.des{
+  width:50%;
+}
+.buttons{
+  width:50%;
+}
+@media  screen and (max-width:550px){
+.image{
+  width:100%;
+}
+.des{
+  width:100%;
+}
+.details{
+  justify-content: center !important;
+}
+.buttons{
+  width:100%;
+  text-align: center;
+  margin-bottom:10%;
+}
+.price{
+  text-align: center;
+}
+}
