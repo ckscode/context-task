@@ -113,8 +113,11 @@ const Cart = () => {
           </div>
         );
       })}
-      <h3>Total Quantity={totalQuantity}</h3>
-      <h3>Total Price={totalPrice}</h3>
+      <div className="d-flex flex-wrap justify-content-between p-3">
+      <div><h3>Total Quantity={totalQuantity}</h3></div>
+      <div><h3 >Total Price={totalPrice}</h3></div>
+      </div>
+    
     </div>
   );
 };
